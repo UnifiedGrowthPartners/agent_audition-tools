@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Brokerage Agent Desktop Portal</title>
+<title>Unified Growth Partners | Agent Desktop Portal</title>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -19,7 +19,7 @@
   /* ── TOP BAR ── */
   .topbar {
     background: #0a1219;
-    border-bottom: 1px solid #1e3a52;
+    border-bottom: 1px solid #1e523a;
     padding: 10px 24px;
     display: flex;
     align-items: center;
@@ -31,10 +31,10 @@
     font-size: 13px;
     font-weight: 700;
     letter-spacing: 0.08em;
-    color: #38bdf8;
+    color: #38f8bd;
     text-transform: uppercase;
   }
-  .topbar-divider { width: 1px; height: 18px; background: #1e3a52; }
+  .topbar-divider { width: 1px; height: 18px; background: #1e523a; }
   .topbar-title { font-size: 13px; color: #64748b; }
   .status-pill {
     font-size: 11px;
@@ -50,8 +50,8 @@
 
   /* ── ASSESSMENT BANNER ── */
   .banner {
-    background: linear-gradient(90deg, #1e3a52 0%, #172035 100%);
-    border-bottom: 1px solid #1e3a52;
+    background: linear-gradient(90deg, #1e523a 0%, #172035 100%);
+    border-bottom: 1px solid #1e523a;
     padding: 10px 24px;
     display: flex;
     align-items: center;
@@ -73,7 +73,7 @@
   .sidebar {
     width: 200px;
     background: #0a1219;
-    border-right: 1px solid #1e3a52;
+    border-right: 1px solid #1e523a;
     padding: 20px 0;
     flex-shrink: 0;
   }
@@ -98,18 +98,18 @@
   }
   .nav-item:hover { background: #0f1f2e; color: #94a3b8; }
   .nav-item.active {
-    background: #0f2535;
-    border-left-color: #38bdf8;
+    background: #0f3525;
+    border-left-color: #38f8bd;
     color: #e2e8f0;
   }
   .nav-icon { font-size: 15px; width: 20px; text-align: center; }
 
-  .sidebar-divider { border: none; border-top: 1px solid #1e3a52; margin: 12px 0; }
+  .sidebar-divider { border: none; border-top: 1px solid #1e523a; margin: 12px 0; }
 
   .call-widget {
     margin: 16px;
-    background: #0f2535;
-    border: 1px solid #1e3a52;
+    background: #0f3525;
+    border: 1px solid #1e523a;
     border-radius: 8px;
     padding: 12px;
   }
@@ -130,7 +130,7 @@
   /* ── TABS ── */
   .tabs {
     display: flex;
-    border-bottom: 1px solid #1e3a52;
+    border-bottom: 1px solid #1e523a;
     background: #0a1219;
     flex-shrink: 0;
   }
@@ -148,15 +148,15 @@
     white-space: nowrap;
   }
   .tab:hover { color: #94a3b8; background: #0f1923; }
-  .tab.active { color: #38bdf8; border-bottom-color: #38bdf8; background: #0f1923; }
+  .tab.active { color: #38f8bd; border-bottom-color: #38f8bd; background: #0f1923; }
   .tab-badge {
     font-size: 10px;
-    background: #1e3a52;
+    background: #1e523a;
     color: #64748b;
     padding: 1px 6px;
     border-radius: 10px;
   }
-  .tab.active .tab-badge { background: #0c2d4a; color: #38bdf8; }
+  .tab.active .tab-badge { background: #0c4a2d; color: #38f8bd; }
 
   /* ── PANELS ── */
   .panel { display: none; flex: 1; overflow-y: auto; padding: 28px; flex-direction: column; }
@@ -171,7 +171,7 @@
   .search-input {
     flex: 1;
     background: #0a1219;
-    border: 1px solid #1e3a52;
+    border: 1px solid #1e523a;
     border-radius: 6px;
     padding: 10px 14px;
     font-size: 14px;
@@ -181,11 +181,11 @@
     font-family: inherit;
   }
   .search-input::placeholder { color: #334155; }
-  .search-input:focus { border-color: #38bdf8; }
+  .search-input:focus { border-color: #38f8bd; }
   .search-btn {
-    background: #0c4a6e;
-    color: #38bdf8;
-    border: 1px solid #0369a1;
+    background: #0c6e4a;
+    color: #38f8bd;
+    border: 1px solid #03a169;
     border-radius: 6px;
     padding: 10px 18px;
     font-size: 13px;
@@ -195,23 +195,23 @@
     transition: background 0.15s;
     white-space: nowrap;
   }
-  .search-btn:hover { background: #075985; }
+  .search-btn:hover { background: #078559; }
 
   /* ── RESULT CARDS ── */
   .result-card {
     background: #0a1219;
-    border: 1px solid #1e3a52;
+    border: 1px solid #1e523a;
     border-radius: 8px;
     overflow: hidden;
     margin-bottom: 12px;
   }
   .result-card-header {
-    background: #0f2535;
+    background: #0f3525;
     padding: 12px 16px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid #1e3a52;
+    border-bottom: 1px solid #1e523a;
   }
   .result-name { font-size: 15px; font-weight: 600; color: #e2e8f0; }
   .result-body { padding: 16px; display: flex; flex-direction: column; gap: 10px; }
@@ -229,13 +229,13 @@
   .badge-green { background: #052e16; color: #4ade80; border: 1px solid #166534; }
   .badge-red { background: #3b0a0a; color: #f87171; border: 1px solid #7f1d1d; }
   .badge-yellow { background: #2d1f00; color: #fbbf24; border: 1px solid #78350f; }
-  .badge-blue { background: #0c2d4a; color: #38bdf8; border: 1px solid #0369a1; }
+  .badge-blue { background: #0c4a2d; color: #38f8bd; border: 1px solid #03a169; }
   .badge-purple { background: #1e1040; color: #a78bfa; border: 1px solid #4c1d95; }
 
   /* ── EMPTY / ERROR STATES ── */
   .state-box {
     background: #0a1219;
-    border: 1px solid #1e3a52;
+    border: 1px solid #1e523a;
     border-radius: 8px;
     padding: 32px;
     text-align: center;
@@ -245,13 +245,13 @@
   .state-sub { font-size: 13px; color: #475569; }
 
   /* ── ELIGIBILITY PANEL ── */
-  .elig-form { background: #0a1219; border: 1px solid #1e3a52; border-radius: 8px; padding: 20px; margin-bottom: 16px; }
+  .elig-form { background: #0a1219; border: 1px solid #1e523a; border-radius: 8px; padding: 20px; margin-bottom: 16px; }
   .elig-label { font-size: 12px; color: #64748b; margin-bottom: 8px; display: block; }
   .check-btn {
     width: 100%;
-    background: linear-gradient(135deg, #0c4a6e, #075985);
-    color: #38bdf8;
-    border: 1px solid #0369a1;
+    background: linear-gradient(135deg, #0c6e4a, #078559);
+    color: #38f8bd;
+    border: 1px solid #03a169;
     border-radius: 6px;
     padding: 12px;
     font-size: 14px;
@@ -277,10 +277,10 @@
   .elig-result-body { padding: 16px 18px; display: flex; flex-direction: column; gap: 10px; }
   .elig-result.dual { border-color: #4c1d95; }
   .elig-result.dual .elig-result-header { background: #1e1040; }
-  .elig-result.retail { border-color: #1e3a52; }
-  .elig-result.retail .elig-result-header { background: #0f2535; }
+  .elig-result.retail { border-color: #1e523a; }
+  .elig-result.retail .elig-result-header { background: #0f3525; }
 
-  .divider-line { border: none; border-top: 1px solid #1e3a52; margin: 8px 0; }
+  .divider-line { border: none; border-top: 1px solid #1e523a; margin: 8px 0; }
 
   .info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
   .info-cell { background: #0f1923; border-radius: 6px; padding: 10px 12px; }
@@ -289,12 +289,12 @@
 
   /* ── HINT BOX ── */
   .hint {
-    background: #0c2d4a;
-    border: 1px solid #0369a1;
+    background: #0c4a2d;
+    border: 1px solid #03a169;
     border-radius: 6px;
     padding: 10px 14px;
     font-size: 12px;
-    color: #7dd3fc;
+    color: #7dfcd3;
     display: flex;
     gap: 8px;
     align-items: flex-start;
@@ -303,22 +303,135 @@
   .hint-icon { flex-shrink: 0; margin-top: 1px; }
 
   /* ── TIMER LOGIC ── */
-  .timer-display { font-size: 22px; font-weight: 700; color: #38bdf8; font-variant-numeric: tabular-nums; letter-spacing: 0.04em; }
+  .timer-display { font-size: 22px; font-weight: 700; color: #38f8bd; font-variant-numeric: tabular-nums; letter-spacing: 0.04em; }
+
+  /* ── INTRO OVERLAY ── */
+  .intro-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(5, 10, 15, 0.92);
+    z-index: 999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+  }
+  .intro-modal {
+    background: #0a1219;
+    border: 1px solid #1e523a;
+    border-radius: 12px;
+    max-width: 640px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    padding: 32px 36px;
+  }
+  .intro-badge {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: #38f8bd;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  .intro-modal h1 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #e2e8f0;
+    margin-bottom: 20px;
+  }
+  .intro-modal h2 {
+    font-size: 13px;
+    font-weight: 700;
+    color: #7dfcd3;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin: 20px 0 10px;
+  }
+  .intro-modal h2:first-of-type { margin-top: 0; }
+  .intro-modal ul, .intro-modal ol {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .intro-modal li {
+    font-size: 13px;
+    color: #cbd5e1;
+    line-height: 1.6;
+  }
+  .intro-modal ol li strong { color: #e2e8f0; }
+  .intro-footer-note {
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid #1e523a;
+    font-size: 12px;
+    color: #64748b;
+  }
+  .intro-actions {
+    margin-top: 24px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .intro-btn {
+    background: linear-gradient(135deg, #0c6e4a, #078559);
+    color: #38f8bd;
+    border: 1px solid #03a169;
+    border-radius: 6px;
+    padding: 11px 22px;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: inherit;
+    transition: opacity 0.15s;
+  }
+  .intro-btn:hover { opacity: 0.85; }
 </style>
 </head>
 <body>
 
+<!-- INTRO OVERLAY -->
+<div class="intro-overlay" id="introOverlay">
+  <div class="intro-modal">
+    <div class="intro-badge">Before You Begin</div>
+    <h1>What to Expect</h1>
+
+    <h2>Quick Checklist</h2>
+    <ul>
+      <li>Use a personal device (phone, laptop) and personal WiFi or cellular data if possible, rather than a heavily managed work computer — some corporate security software can block the microphone connection needed for the call.</li>
+      <li>Find a quiet space where you won't be interrupted for 15–20 minutes.</li>
+      <li>Make sure your browser allows microphone access when prompted.</li>
+      <li>Headphones aren't required, but they can help you hear clearly.</li>
+    </ul>
+
+    <h2>Here's Exactly What Will Happen</h2>
+    <ol>
+      <li><strong>1. This page.</strong> You're on the Agent Desktop Portal — your workspace for the call. Everything here (provider records, drug formulary, eligibility data) is simulated for this exercise — none of it is real. On the left you'll find three lookup tools you'll use during the call: Provider Search, Formulary/Rx, and Eligibility/LIS Status. There's also a Compliance Cheat Sheet link in the sidebar — take a minute to review it and how to click through the sections of the webpage before you start; it has the scripts you'll be expected to use naturally on the call.</li>
+      <li><strong>2. Starting the call.</strong> When you're ready, click "Start Audition Call" (top right) or "Launch Call" (sidebar). This opens a new tab with a colorful circular icon and a button that says "Talk to Retell AI." Click it, and your browser will ask for microphone permission — you'll need to allow this for the call to connect.</li>
+      <li><strong>3. On the call.</strong> You'll first hear a short automated notice confirming you're speaking with an AI, not a human, and that the call will be recorded and evaluated — say "I understand and agree to proceed" when you're ready (or "EXIT" at any point if you need to stop). You'll then be asked for your full name for our records. After that, the AI will introduce itself in character as a Medicare consumer with a specific situation — this is your roleplay partner for the exercise.</li>
+      <li><strong>4. During the roleplay.</strong> Treat it like a real consumer call. Use the Provider Search, Formulary, and Eligibility tools in the other tab as needed — the AI will wait patiently while you look things up, so take your time and talk through what you're doing if that feels natural.</li>
+      <li><strong>5. Wrapping up.</strong> The call will end naturally with a friendly goodbye — there's no pass/fail moment on the call itself, and you won't receive a score in the moment. This exercise is meant to show us how you use our systems, hold a conversation, and build rapport, not to trip you up. Your hiring manager will follow up with you separately afterward.</li>
+    </ol>
+
+    <div class="intro-footer-note">Questions before your call? Contact Pat Hale.</div>
+
+    <div class="intro-actions">
+      <button class="intro-btn" onclick="document.getElementById('introOverlay').style.display='none';">Okay, let's begin →</button>
+    </div>
+  </div>
+</div>
+
 <!-- TOP BAR -->
 <div class="topbar">
   <div class="topbar-left">
-    <div class="topbar-logo">MediCare Brokerage</div>
+    <div class="topbar-logo">UNIFIED GROWTH PARTNERS</div>
     <div class="topbar-divider"></div>
     <div class="topbar-title">Agent Desktop Portal</div>
   </div>
   <div style="display:flex;align-items:center;gap:14px;">
     <span class="session-info">Use this tool during your live audition call</span>
     <a href="https://agent.retellai.com/orb/agent_fc87194f80ac9d37508e418a76?token=2a3809e22c3422fc04e6233a6e78f9ef" target="_blank" rel="noopener noreferrer" style="text-decoration:none;">
-      <button style="background:linear-gradient(135deg,#0c4a6e,#075985);color:#38bdf8;border:1px solid #0369a1;border-radius:6px;padding:7px 16px;font-size:13px;font-weight:700;cursor:pointer;font-family:inherit;display:flex;align-items:center;gap:7px;white-space:nowrap;">
+      <button style="background:linear-gradient(135deg,#0c6e4a,#078559);color:#38f8bd;border:1px solid #03a169;border-radius:6px;padding:7px 16px;font-size:13px;font-weight:700;cursor:pointer;font-family:inherit;display:flex;align-items:center;gap:7px;white-space:nowrap;">
         📞 Start Audition Call
       </button>
     </a>
@@ -359,12 +472,12 @@
       <div class="call-status"><div class="call-dot"></div> Ready</div>
       <div class="call-timer" id="timerDisplay">00:00</div>
       <a href="https://agent.retellai.com/orb/agent_fc87194f80ac9d37508e418a76?token=2a3809e22c3422fc04e6233a6e78f9ef" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:block;margin-top:10px;">
-        <button style="width:100%;background:linear-gradient(135deg,#0c4a6e,#075985);color:#38bdf8;border:1px solid #0369a1;border-radius:6px;padding:8px;font-size:12px;font-weight:700;cursor:pointer;font-family:inherit;">
+        <button style="width:100%;background:linear-gradient(135deg,#0c6e4a,#078559);color:#38f8bd;border:1px solid #03a169;border-radius:6px;padding:8px;font-size:12px;font-weight:700;cursor:pointer;font-family:inherit;">
           📞 Launch Call
         </button>
       </a>
       <a href="Candidate_Compliance_Cheat_Sheet.pdf" download style="text-decoration:none;display:block;margin-top:8px;">
-        <button style="width:100%;background:#0a1219;color:#94a3b8;border:1px solid #1e3a52;border-radius:6px;padding:8px;font-size:12px;font-weight:600;cursor:pointer;font-family:inherit;">
+        <button style="width:100%;background:#0a1219;color:#94a3b8;border:1px solid #1e523a;border-radius:6px;padding:8px;font-size:12px;font-weight:600;cursor:pointer;font-family:inherit;">
           📄 Compliance Cheat Sheet
         </button>
       </a>
@@ -700,7 +813,7 @@ function searchRx() {
           </div>
           <div class="result-row">
             <span class="result-label">Est. Retail Copay</span>
-            <span class="result-value" style="color:#38bdf8;font-weight:600;">$15 per 30-day supply</span>
+            <span class="result-value" style="color:#38f8bd;font-weight:600;">$15 per 30-day supply</span>
           </div>
           <div class="result-row">
             <span class="result-label">Prior Auth</span>
